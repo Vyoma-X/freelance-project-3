@@ -435,6 +435,10 @@ small, .small {
   color: #f5610c;
 }
 
+.cards{
+  height: 48vh;
+}
+
 .number-input {
   border: 1px solid #dbdbdb;
   display: -webkit-inline-box;
