@@ -714,6 +714,7 @@ a.text-dark:hover, .text-dark a:hover {
 .home-4 .owl-dots button.owl-dot {
   height: 10px;
   width: 10px;
+
 }
 .home-4 .product-item {
   position: relative;
@@ -2030,14 +2031,17 @@ a.text-dark:hover, .text-dark a:hover {
   }
 }
 .banner-carousel .owl-nav button {
+  /* display: none; */
   height: 50px;
   width: 50px;
   line-height: 50px !important;
 }
 .banner-carousel .owl-nav .owl-prev {
+  /* display: none; */
   left: 25px !important;
 }
 .banner-carousel .owl-nav .owl-next {
+  /* display: none; */
   right: 25px !important;
 }
 @media (max-width: 991px) {
