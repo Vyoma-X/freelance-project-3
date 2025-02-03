@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/2bf40ab72ea4897a3fd9b6e48b233a19?family=Garamond" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .parallax-container {
+            position: relative;
+            width: 100%;
+            max-width: 42rem;
+            text-align: center;
+        }
+
+        .background-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .dots-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            opacity: 0.2;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #9ca3af;
+            border-radius: 50%;
+        }
+
+        #leftX {
+            position: absolute;
+            left: -5rem;
+            top: 200px;
+            color: #f472b6;
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        #rightX {
+            position: absolute;
+            right: -5rem;
+            bottom: 25%;
+            color: #14b8a6;
+            font-size: 200px;
+            font-weight: 600;
+        }
+
+        #bottomX {
+            position: absolute;
+            bottom: -180px;
+            left: 33.333%;
+            transform: translateX(-50%);
+            color: #f3f4f6;
+            font-size: 200px;
+            font-weight: 600;
+        }
+
+        .custom-btn {
+            background-color: #F9A392;
+            color: white;
+            width: 200px;
+            height: 48px;
+            transition: background-color 0.3s;
+        }
+
+        .custom-btn:hover {
+            background-color: #70CAD1;
+        }
+
+        @media (max-width: 768px) {
+            .background-elements {
+                display: none;
+            }
+
+            h1 {
+                font-size: 6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container">
+        <!-- Background Elements -->
+        <div class="background-elements d-none d-md-block">
+            <!-- Dots Grid -->
+            <div class="dots-grid" id="dotsGrid">
+                <!-- 25 dots -->
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <!-- X marks -->
+            <span id="leftX">×</span>
+            <span id="rightX">×</span>
+            <span id="bottomX">o</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="position-relative z-1 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="display-1 fw-bold text-dark mb-4">404</h1>
+            <h2 class="h2 fw-semibold text-dark mb-3">OOPS...</h2>
+            <p class="text-secondary text-center">We're sorry, but<br>something went wrong.</p>
+            <button class="btn custom-btn mt-5">HOME PAGE</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.parallax-container');
+            const dotsGrid = document.getElementById('dotsGrid');
+            const leftX = document.getElementById('leftX');
+            const rightX = document.getElementById('rightX');
+            const bottomX = document.getElementById('bottomX');
+
+            let containerRect = container.getBoundingClientRect();
+            let containerCenterX = containerRect.left + containerRect.width / 2;
+            let containerCenterY = containerRect.top + containerRect.height / 2;
+
+            const MOVEMENT_RANGE = 15;
+
+            document.addEventListener('mousemove', (e) => {
+                const deltaX = (e.clientX - containerCenterX) / containerRect.width;
+                const deltaY = (e.clientY - containerCenterY) / containerRect.height;
+
+                // Apply constrained movements
+                leftX.style.transform = `translate(${-deltaX * MOVEMENT_RANGE}px, ${-deltaY * MOVEMENT_RANGE}px)`;
+                rightX.style.transform = `translate(${-deltaX * MOVEMENT_RANGE}px, ${-deltaY * MOVEMENT_RANGE}px)`;
+                bottomX.style.transform = `translate(${-deltaX * MOVEMENT_RANGE}px, ${-deltaY * MOVEMENT_RANGE}px) translateX(-50%)`;
+                dotsGrid.style.transform = `translate(${-deltaX * MOVEMENT_RANGE}px, ${-deltaY * MOVEMENT_RANGE}px)`;
+            });
+
+            window.addEventListener('resize', () => {
+                containerRect = container.getBoundingClientRect();
+                containerCenterX = containerRect.left + containerRect.width / 2;
+                containerCenterY = containerRect.top + containerRect.height / 2;
+            });
+        });
+    </script>
+</body>
+</html>
