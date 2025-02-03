@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        .section {
+            padding: 80px 0;
+        }
+        
+        .bg-light-gray {
+            background-color: #f8f9fa;
+        }
+        
+        .category-card {
+            perspective: 1000px;
+            height: 400px;
+            margin: 20px 0;
+        }
+
+        .category-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .category-card:hover .category-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .category-card-front, .category-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .category-card-front {
+            background-color: white;
+        }
+
+        .category-card-back {
+            background-color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .starting-price {
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-group .btn {
+            margin: 0 5px;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+
+        .btn-group .btn.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .list-unstyled li {
+            padding: 5px 0;
+        }
+
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .mt-30 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section bg-light-gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 text-center">
+                <h2 class="section-heading h1 text-dark mb-30">Our Product Categories</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-9 text-center mb-10">
+                <div class="btn-group product-filter-buttons-2">
+                    <button class="btn active" data-filter="*">All Categories</button>
+                    <button class="btn" data-filter=".computer">Computer</button>
+                    <button class="btn" data-filter=".laptop">Laptop</button>
+                    <button class="btn" data-filter=".mobile">Mobile</button>
+                    <button class="btn" data-filter=".screen-pro">Screen Protectors</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row jsFilter">
+            <!-- Computer Category -->
+            <div class="col-lg-3 col-md-6 computer">
+                <div class="category-card">
+                    <div class="category-card-inner">
+                        <div class="category-card-front">
+                            <div class="card border-0 h-100">
+                                <img src="https://via.placeholder.com/400x300" alt="Computer Category" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Computers</h4>
+                                    <p class="starting-price">Starting from $245.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-card-back">
+                            <div class="card border-0 h-100">
+                                <div class="card-body text-center">
+                                    <h4>Our Computer Range</h4>
+                                    <ul class="list-unstyled">
+                                        <li>Desktop PCs</li>
+                                        <li>Gaming Computers</li>
+                                        <li>Workstations</li>
+                                        <li>Custom Builds</li>
+                                    </ul>
+                                    <a href="https://facebook.com/yourpage/computers" class="btn btn-primary mt-3">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laptop Category -->
+            <div class="col-lg-3 col-md-6 laptop">
+                <div class="category-card">
+                    <div class="category-card-inner">
+                        <div class="category-card-front">
+                            <div class="card border-0 h-100">
+                                <img src="https://via.placeholder.com/400x300" alt="Laptop Category" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Laptops</h4>
+                                    <p class="starting-price">Starting from $245.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-card-back">
+                            <div class="card border-0 h-100">
+                                <div class="card-body text-center">
+                                    <h4>Our Laptop Range</h4>
+                                    <ul class="list-unstyled">
+                                        <li>Business Laptops</li>
+                                        <li>Gaming Laptops</li>
+                                        <li>Ultrabooks</li>
+                                        <li>Student Laptops</li>
+                                    </ul>
+                                    <a href="https://facebook.com/yourpage/laptops" class="btn btn-primary mt-3">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Category -->
+            <div class="col-lg-3 col-md-6 mobile">
+                <div class="category-card">
+                    <div class="category-card-inner">
+                        <div class="category-card-front">
+                            <div class="card border-0 h-100">
+                                <img src="https://via.placeholder.com/400x300" alt="Mobile Category" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Mobile Devices</h4>
+                                    <p class="starting-price">Starting from $245.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-card-back">
+                            <div class="card border-0 h-100">
+                                <div class="card-body text-center">
+                                    <h4>Our Mobile Range</h4>
+                                    <ul class="list-unstyled">
+                                        <li>Smartphones</li>
+                                        <li>Tablets</li>
+                                        <li>Accessories</li>
+                                        <li>Cases</li>
+                                    </ul>
+                                    <a href="https://facebook.com/yourpage/mobile" class="btn btn-primary mt-3">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen Protector Category -->
+            <div class="col-lg-3 col-md-6 screen-pro">
+                <div class="category-card">
+                    <div class="category-card-inner">
+                        <div class="category-card-front">
+                            <div class="card border-0 h-100">
+                                <img src="https://via.placeholder.com/400x300" alt="Screen Protector Category" class="card-img-top">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Screen Protectors</h4>
+                                    <p class="starting-price">Starting from $245.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-card-back">
+                            <div class="card border-0 h-100">
+                                <div class="card-body text-center">
+                                    <h4>Our Protector Range</h4>
+                                    <ul class="list-unstyled">
+                                        <li>Phone Protectors</li>
+                                        <li>Tablet Protectors</li>
+                                        <li>Laptop Guards</li>
+                                        <li>Monitor Protectors</li>
+                                    </ul>
+                                    <a href="https://facebook.com/yourpage/protectors" class="btn btn-primary mt-3">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JavaScript and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const items = document.querySelectorAll('.jsFilter > div');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            items.forEach(item => {
+                if (filterValue === '*') {
+                    item.style.display = 'block';
+                } else {
+                    if (item.classList.contains(filterValue.substring(1))) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
+
+</body>
+</html>
