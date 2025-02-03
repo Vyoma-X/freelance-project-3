@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories and Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Common Styles */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #1f2937;
+        }
+        
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+
+        /* Categories Section */
+        .category-card {
+            height: 40vh;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .category-card:hover .category-overlay {
+            opacity: 1;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-badge {
+            background-color: #ec4899;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+
+        .category-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1.5rem;
+            color: white;
+            z-index: 2;
+        }
+
+        /* Reviews Section */
+        #carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .review-card {
+            flex: 0 0 100%;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .review-card {
+                flex: 0 0 33.333%;
+            }
+        }
+
+        .review-card.active .card {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .indicator-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            margin: 0 4px;
+            padding: 0;
+            background-color: #cbd5e0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .indicator-dot.active {
+            background-color: #f5a7a7;
+        }
+
+        .view-all {
+            color: #f5a7a7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .view-all:hover {
+            color: #ec4899;
+            text-decoration: underline;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- Categories Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title mb-2">Top Categories</h2>
+                <p class="text-muted">Discover the best services we offer for relaxation and care.</p>
+            </div>
+
+            <div class="text-end mb-4">
+                <a href="#" class="view-all">View all →</a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Category Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="category-card shadow">
+                        <img src="images/blogImages/blogImg1.jpeg" alt="Massage Therapy">
+                        <div class="category-overlay"></div>
+                        <div class="category-content">
+                            <span class="category-badge">150 Results</span>
+                            <h3 class="mt-2 fs-4 fw-bold">Massage Therapy</h3>
+                            <p class="mb-0"><i class="fas fa-comments"></i> 200 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for other categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title mb-2">Latest Reviews</h2>
+                <p class="text-muted">See what our customers are saying about us.</p>
+            </div>
+
+            <div class="text-end mb-4">
+                <a href="#" class="view-all">View all →</a>
+            </div>
+
+            <div class="carousel-container">
+                <div id="carousel">
+                    <!-- Reviews will be inserted here by JavaScript -->
+                </div>
+
+                <div id="carousel-indicators" class="d-flex justify-content-center mt-4">
+                    <!-- Indicators will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Reviews Data
+        const reviews = [
+            { id: 1, user: "Mark Twain", shop: "Fnac", review: "Shipping Very Fast", date: "26.08.2018", img: "/api/placeholder/50/50" },
+            { id: 2, user: "John Doe", shop: "Fnac", review: "Awesome Experience", date: "26.08.2018", img: "/api/placeholder/50/50" },
+            { id: 3, user: "Marika", shop: "Fnac", review: "Great Products", date: "26.08.2018", img: "/api/placeholder/50/50" },
+            { id: 4, user: "Alice Smith", shop: "Fnac", review: "Amazing Service", date: "26.08.2018", img: "/api/placeholder/50/50" },
+            { id: 5, user: "Bob Martin", shop: "Fnac", review: "Fast Delivery", date: "26.08.2018", img: "/api/placeholder/50/50" }
+        ];
+
+        // Carousel functionality
+        class ReviewCarousel {
+            constructor(containerId, indicatorsId, data) {
+                this.container = document.getElementById(containerId);
+                this.indicators = document.getElementById(indicatorsId);
+                this.data = data;
+                this.currentIndex = 0;
+                this.isMobile = window.innerWidth < 768;
+                this.touchStartX = 0;
+                this.init();
+            }
+
+            init() {
+                this.render();
+                this.setupEventListeners();
+                this.startAutoplay();
+            }
+
+            render() {
+                this.container.innerHTML = '';
+                this.indicators.innerHTML = '';
+
+                this.data.forEach((item, index) => {
+                    // Create review card
+                    const card = document.createElement('div');
+                    card.className = `review-card ${index === this.currentIndex ? 'active' : ''}`;
+                    card.innerHTML = this.getReviewTemplate(item);
+                    this.container.appendChild(card);
+
+                    // Create indicator
+                    const indicator = document.createElement('button');
+                    indicator.className = `indicator-dot ${index === this.currentIndex ? 'active' : ''}`;
+                    indicator.dataset.index = index;
+                    this.indicators.appendChild(indicator);
+                });
+
+                this.updateCarousel();
+            }
+
+            getReviewTemplate(item) {
+                return `
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="${item.img}" alt="${item.user}" class="rounded-circle me-3" style="width: 48px; height: 48px;">
+                                <div>
+                                    <p class="text-muted small mb-1">Shops</p>
+                                    <p class="fw-bold mb-0">${item.user} reviewed <a href="#" class="view-all">${item.shop}</a></p>
+                                </div>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">"${item.review}"</h3>
+                            <p class="text-muted mb-3">Et nec tantas accusamus salutatus, sit commodo veritus te.</p>
+                            <small class="text-muted">Published: ${item.date}</small>
+                        </div>
+                    </div>
+                `;
+            }
+
+            updateCarousel() {
+                const translateValue = this.isMobile ? 
+                    -(this.currentIndex * 100) : 
+                    -((this.currentIndex) * 33.333);
+                this.container.style.transform = `translateX(${translateValue}%)`;
+
+                // Update active states
+                document.querySelectorAll('.review-card').forEach((card, index) => {
+                    card.classList.toggle('active', index === this.currentIndex);
+                });
+
+                document.querySelectorAll('.indicator-dot').forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+            }
+
+            setupEventListeners() {
+                // Indicator clicks
+                this.indicators.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('indicator-dot')) {
+                        this.currentIndex = parseInt(e.target.dataset.index);
+                        this.updateCarousel();
+                    }
+                });
+
+                // Touch events for mobile
+                this.container.addEventListener('touchstart', (e) => {
+                    this.touchStartX = e.touches[0].clientX;
+                });
+
+                this.container.addEventListener('touchend', (e) => {
+                    const touchEndX = e.changedTouches[0].clientX;
+                    const diff = this.touchStartX - touchEndX;
+
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) this.next();
+                        else this.prev();
+                    }
+                });
+
+                // Window resize
+                window.addEventListener('resize', () => {
+                    const wasMobile = this.isMobile;
+                    this.isMobile = window.innerWidth < 768;
+                    if (wasMobile !== this.isMobile) {
+                        this.currentIndex = 0;
+                        this.render();
+                    }
+                });
+            }
+
+            next() {
+                this.currentIndex = (this.currentIndex + 1) % this.data.length;
+                this.updateCarousel();
+            }
+
+            prev() {
+                this.currentIndex = (this.currentIndex - 1 + this.data.length) % this.data.length;
+                this.updateCarousel();
+            }
+
+            startAutoplay() {
+                setInterval(() => this.next(), 5000);
+            }
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ReviewCarousel('carousel', 'carousel-indicators', reviews);
+        });
+    </script>
+</body>
+</html>
