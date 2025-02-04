@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/plugins/jquery-nice-select-master/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/specing.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body id="top">
@@ -703,170 +705,196 @@
 </section>
 <!-- end of testimonials -->
 
- <!-- start of products -->
- <section class="section bg-light-gray">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8 text-center">
-                <h2 class="section-heading h1 text-dark mb-30">Our Recent Products</h2> 
+
+
+<!-- start of recent products -->
+<section class="section cm-services bg-light-gray">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <!-- <h4 class="section-subtitle">Our Services <span></span></h4> -->
+                <h2 class="section-heading text-dark mb-30">Our Recent Products</h2>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-xl-9 text-center mb-10">
-                <div class="btn-group product-filter-buttons-2">
-                    <button class="btn active" data-filter="*">All items</button>
-                    <button class="btn" data-filter=".computer">Computer</button>
-                    <button class="btn" data-filter=".laptop">Laptop</button>
-                    <button class="btn" data-filter=".mobile">Mobile</button>
-                    <button class="btn" data-filter=".screen-pro">Screen protector</button>
-                </div>
-            </div>
-        </div>
-        <div class="row jsFilter">
-            <div class="col-lg-4 col-md-6 computer">
-                <div class="card computer border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                            </div>
-                        </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                        </div>
+                <div class="col-xl-9 text-center mb-10">
+                    <div class="btn-group product-filter-buttons-2">
+                        <button class="btn active" data-filter="all">All items</button>
+                        <button class="btn" data-filter="computer">Computer</button>
+                        <button class="btn" data-filter="laptop">Laptop</button>
+                        <button class="btn" data-filter="mobile">Mobile</button>
+                        <button class="btn" data-filter="screen-pro">Screen protector</button>
                     </div>
                 </div>
-                <!-- product-item -->
             </div>
-            <div class="col-lg-4 col-md-6 laptop">
-                <div class="card laptop border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/02.jpg" alt="">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+            <div class="swiper productsSwiper bg-dark">
+                <div class="swiper-wrapper">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
                             </div>
                         </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                        </div>
                     </div>
-                </div>
-                <!-- product-item -->
-            </div>
-            <div class="col-lg-4 col-md-6 mobile computer">
-                <div class="card mobile border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/03.jpg" alt="">
-                    <div class="card-body">
-                        
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item ">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
                             </div>
                         </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                         
-                        </div>
                     </div>
-                </div>
-                <!-- product-item -->
-            </div>
-            <div class="col-lg-4 col-md-6 screen-pro">
-                <div class="card screen-pro border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/04.jpg" alt="">
-                    <div class="card-body">
-                       
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="laptop">
+                        <div class="card laptop border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
                             </div>
                         </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                          
-                        </div>
                     </div>
-                </div>
-                <!-- product-item -->
-            </div>
-            <div class="col-lg-4 col-md-6 laptop screen-pro">
-                <div class="card computer border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/05.jpg" alt="">
-                    <div class="card-body">
-                        
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="laptop">
+                        <div class="card laptop border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
                             </div>
                         </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                           
-                        </div>
                     </div>
-                </div>
-                <!-- product-item -->
-            </div>
-            <div class="col-lg-4 col-md-6 mobile">
-                <div class="card mobile border-0 product-item mt-30">
-                    <img class="card-img-top border-bottom" src="assets/images/products/06.jpg" alt="">
-                    <div class="card-body">
-                        
-                        <div class="d-flex align-items-center justify-content-between">
-                            <small class="text-uppercase font-w-600">computer products</small>
-                            <div class="rating small text-primary d-flex">
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
-                                <span class="fas fa-star"></span>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="mobile">
+                        <div class="card mobile border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
                             </div>
                         </div>
-                        <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
-                          
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar structure for other products -->
+                    <!-- Remember to add data-category attribute to each swiper-slide -->
                 </div>
-                <!-- product-item -->
+         
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
+            
+          
     </div>
+  
 </section>
-<!-- end of products -->
+<!-- end of recent products -->
 
 <!-- start of brands -->
 <section class="section cm-brands-02">
@@ -897,108 +925,228 @@
 <!-- end of brands -->
 
    <!-- start of page-content -->
-    <section class="section page-content">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-content-center">
-                <div class="col-12 mt-70">
-                    <h3 class="text-dark text-center">Services Pricing</h3>
-                </div>
-                <div class="col-md-8">
-                    <div id="pricingCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="pricing-item shadow text-center mt-30">
-                                    <h4 class="text-dark">One Time Charge</h4>
-                                    <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
-                                        <li>No Upfront Payment</li>
-                                        <li>Money Back Guarantee</li>
-                                        <li>Technicians in the USA</li>
-                                        <li>No Monthly Fees</li>
-                                        <li>Free Initial Analysis</li>
-                                        <li>Quote Before we Start</li>
-                                        <li>Pay with Credit Card or Paypal</li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <a href="#!" class="btn btn-primary">Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pricing-item shadow text-center mt-30">
-                                    <h4 class="text-dark">One Time Charge</h4>
-                                    <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
-                                        <li>No Upfront Payment</li>
-                                        <li>Money Back Guarantee</li>
-                                        <li>Technicians in the USA</li>
-                                        <li>No Monthly Fees</li>
-                                        <li>Free Initial Analysis</li>
-                                        <li>Quote Before we Start</li>
-                                        <li>Pay with Credit Card or Paypal</li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <a href="#!" class="btn btn-primary">Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pricing-item shadow text-center mt-30">
-                                    <h4 class="text-dark">One Time Charge</h4>
-                                    <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
-                                        <li>No Upfront Payment</li>
-                                        <li>Money Back Guarantee</li>
-                                        <li>Technicians in the USA</li>
-                                        <li>No Monthly Fees</li>
-                                        <li>Free Initial Analysis</li>
-                                        <li>Quote Before we Start</li>
-                                        <li>Pay with Credit Card or Paypal</li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <a href="#!" class="btn btn-primary">Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="pricing-item shadow text-center mt-30">
-                                    <h4 class="text-dark">One Time Charge</h4>
-                                    <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
-                                    <ul class="list-unstyled">
-                                        <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
-                                        <li>No Upfront Payment</li>
-                                        <li>Money Back Guarantee</li>
-                                        <li>Technicians in the USA</li>
-                                        <li>No Monthly Fees</li>
-                                        <li>Free Initial Analysis</li>
-                                        <li>Quote Before we Start</li>
-                                        <li>Pay with Credit Card or Paypal</li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <a href="#!" class="btn btn-primary">Appointment</a>
-                                    </div>
-                                </div>
+   <section class="section cm-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <!-- <h4 class="section-subtitle">Our Services <span></span></h4> -->
+                <h2 class="section-heading text-dark mb-30">Services Pricing</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="service-slider owl-carousel">
+                    <!-- price 1 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">Professional PC & Laptop Repair Services</h4>
+                            <!-- <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3> -->
+                            <ul class="list-unstyled text-justify">
+                                <li><span class="text-primary font-weight-bold">✔</span> Screen Replacement – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Battery Replacement – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Hard Drive/SSD Replacement – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> RAM Upgrade – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Operating System Repair – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Custom PC Builds – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Software Troubleshooting – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Motherboard Repair – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Cooling System Fix – From £XX</li>
+                                <li><span class="text-primary font-weight-bold">✔</span> Keyboard Repair – From £XX</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
                             </div>
                         </div>
-    
-                        <ol class="carousel-indicators">
-                            <li data-target="#pricingCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#pricingCarousel" data-slide-to="1"></li>
-                            <li data-target="#pricingCarousel" data-slide-to="2"></li>
-                            <li data-target="#pricingCarousel" data-slide-to="3"></li>
-                        </ol>
                     </div>
+                    <!-- price 2 -->
+
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 3 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 4 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 5 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 6 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 7 -->
+                     <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 8 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 9 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price 10 -->
+                    <div class="item">
+                        <div class="pricing-item shadow text-center mt-30 mt-md-20">
+                            <h4 class="text-dark bg-light-gray">One Time Charge</h4>
+                            <h3 class="text-primary pt-15 pb-15 font-secondery">$59.95</h3>
+                            <ul class="list-unstyled">
+                                <li>Errors, Tune Ups, Email Issues 60 Minutes</li>
+                                <li>No Upfront Payment</li>
+                                <li>Money Back Guarantee</li>
+                                <li>Technicians in the USA</li>
+                                <li>No Monthly Fees</li>
+                                <li>Free Initial Analysis</li>
+                                <li>Quote Before we Start</li>
+                                <li>Pay with Credit Card or Paypal</li>
+                            </ul>
+                            <div class="pricing-footer">
+                                <a href="#!" class="btn btn-primary">Call Now!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
                 </div>
             </div>
         </div>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </div>
+</section>
 <!-- end of page-content -->
 
   
@@ -1256,49 +1404,26 @@
     
 
     <!-- start of blogs -->
-    <section class="section cm-blogs">
+     <section class="section cm-services">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="section-heading h1 text-dark mb-15">Latest News</h2>
+                <div class="col-lg-12 text-center">
+                    <!-- <h4 class="section-subtitle">Our Services <span></span></h4> -->
+                    <h2 class="section-heading text-dark mb-30">Latest News</h2>
                 </div>
-    
-                <div class="col-lg-6 col-md-8 mx-auto"> 
-                    <div class="blog-item card border-0 mt-30 bg-light-gray">
-                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner w-100">
-                                <div class="carousel-item active">
-                                    <a href="blog-details.html">
-                                        <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
-                                    </a>
-                                    <div class="blog-meta-overlap">21 <span>May</span></div>
-                                    <div class="card-body">
-                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
-                                            Resources Exquisite Set Arranging Moonlight Him
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="service-slider owl-carousel">
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
                                         </a>
-                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
-                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
-                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/1.png" alt=""></span> -->
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="blog-details.html">
-                                        <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
-                                    </a>
-                                    <div class="blog-meta-overlap">21 <span>May</span></div>
-                                    <div class="card-body">
-                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
-                                            Barton Did Feebly Change Man She Afford Square
-                                        </a>
-                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
-                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="blog-details.html">
-                                        <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
-                                    </a>
                                     <div class="blog-meta-overlap">21 <span>May</span></div>
                                     <div class="card-body">
                                         <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
@@ -1310,23 +1435,120 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Carousel Controls -->
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> -->
                         </div>
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
+                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/2.png" alt=""></span> -->
+                                    </div>
+                                    <div class="blog-meta-overlap">21 <span>May</span></div>
+                                    <div class="card-body">
+                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
+                                            Barton Did Feebly Change Man She Afford Square
+                                        </a>
+                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
+                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
+                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/3.png" alt=""></span> -->
+                                    </div>
+                                    <div class="blog-meta-overlap">21 <span>May</span></div>
+                                    <div class="card-body">
+                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
+                                            Resources Exquisite Set Arranging Moonlight Him
+                                        </a>
+                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
+                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
+                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/4.png" alt=""></span> -->
+                                    </div>
+                                    <div class="blog-meta-overlap">21 <span>May</span></div>
+                                    <div class="card-body">
+                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
+                                            Village Did Removed Enjoyed Explain Saw Calling Talking.
+                                        </a>
+                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
+                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
+                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/1.png" alt=""></span> -->
+                                    </div>
+                                    <div class="blog-meta-overlap">21 <span>May</span></div>
+                                    <div class="card-body">
+                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
+                                            Village Did Removed Enjoyed Explain Saw Calling Talking.
+                                        </a>
+                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
+                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-service-wrap text-center">
+                                <div class="context">
+                                    <div class="thumb">
+                                        <a href="blog-details.html">
+                                            <img class="card-img-top img-fluid" src="assets/images/blogs/03.jpg" alt="Blog Image">
+                                        </a>
+                                        <!-- <span><img src="assets/images/home-4/service/icon/2.png" alt=""></span> -->
+                                    </div>
+                                    <div class="blog-meta-overlap">21 <span>May</span></div>
+                                    <div class="card-body">
+                                        <a href="blog-details.html" class="h4 font-w-400 text-dark line-h-1-5">
+                                            Resources Exquisite Set Arranging Moonlight Him
+                                        </a>
+                                        <a href="blog-details.html" class="text-dark font-w-600 text-uppercase mt-15">
+                                            Read More <span class="fas fa-long-arrow-alt-right text-primary"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- end of blogs -->
-  
+  <!-- end of blogs -->
 
     <!-- start footer -->
     <footer class="footer section bg-cover overlay-dark pt-60" style="background-image: url(assets/images/bg-footer.jpg);">
@@ -1411,6 +1633,7 @@
     <!-- scroll to top -->
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/OwlCarousel2-develop/dist/owl.carousel.min.js"></script>
     <script src="assets/plugins/OwlCarousel2-develop/owlcarousel2-filter.min.js"></script>
@@ -1419,6 +1642,7 @@
     <script src="assets/plugins/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.js"></script>
 </body>
 
 </html>

@@ -2990,3 +2990,31 @@ a.scroll-to-top.show:hover {
 }
 
 /* Testimonial css end */
+
+
+/* our recent products start */
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+
+.swiper {
+  width: 100%;
+  /* height: 62vh; */
+  padding: 20px;
+}
+.swiper-slide {
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .product-filter-buttons-2 {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .product-filter-buttons-2 .btn {
+      margin: 3px;
+      font-size: 14px;
+  }
+}
+/* our recent products end */
