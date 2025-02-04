@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        .section {
+            padding: 60px 0;
+        }
+        .bg-light-gray {
+            background-color: #f8f9fa;
+        }
+        .product-filter-buttons-2 {
+            margin-bottom: 30px;
+        }
+        .product-filter-buttons-2 .btn {
+            padding: 8px 20px;
+            margin: 5px;
+            border: 1px solid #dee2e6;
+            background: transparent;
+            color: #333;
+            transition: all 0.3s;
+        }
+        .product-filter-buttons-2 .btn.active,
+        .product-filter-buttons-2 .btn:hover {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .product-item {
+            margin: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .swiper {
+            width: 100%;
+            padding: 20px;
+        }
+        .swiper-slide {
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .product-filter-buttons-2 {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .product-filter-buttons-2 .btn {
+                margin: 3px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 text-center">
+                    <h2 class="section-heading h1 text-dark mb-30">Our Recent Products</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-9 text-center mb-10">
+                    <div class="btn-group product-filter-buttons-2">
+                        <button class="btn active" data-filter="all">All items</button>
+                        <button class="btn" data-filter="computer">Computer</button>
+                        <button class="btn" data-filter="laptop">Laptop</button>
+                        <button class="btn" data-filter="mobile">Mobile</button>
+                        <button class="btn" data-filter="screen-pro">Screen protector</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper productsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="laptop">
+                        <div class="card laptop border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="laptop">
+                        <div class="card laptop border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="mobile">
+                        <div class="card mobile border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide" data-category="computer">
+                        <div class="card computer border-0 product-item">
+                            <img class="card-img-top border-bottom" src="assets/images/products/01.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small class="text-uppercase font-w-600">computer products</small>
+                                    <div class="rating small text-primary d-flex">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                </div>
+                                <h5 class="text-dark font-w-600 mt-10 mb-10">Our Recent Products</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="font-w-700 text-dark font-secondery">$245.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar structure for other products -->
+                    <!-- Remember to add data-category attribute to each swiper-slide -->
+                </div>
+                <div class="swiper-pagination"></div>
+              
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        let swiper = new Swiper(".productsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+
+        // Category filtering
+        document.querySelectorAll('.product-filter-buttons-2 .btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                document.querySelectorAll('.product-filter-buttons-2 .btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+
+                // Filter slides
+                const slides = document.querySelectorAll('.swiper-slide');
+                slides.forEach(slide => {
+                    if (filter === 'all' || slide.getAttribute('data-category').includes(filter)) {
+                        slide.style.display = '';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+
+                // Update swiper
+                swiper.update();
+                swiper.slideTo(0);
+            });
+        });
+    </script>
+</body>
+</html>
