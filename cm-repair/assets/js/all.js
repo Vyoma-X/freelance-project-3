@@ -258,8 +258,45 @@
   /* -----------------------------------------
         fact counter
     ----------------------------------------- */
-  $(".counter").counterUp({
-    delay: 15,
-    time: 2000,
-  });
+  // $(".counter").counterUp({
+  //   delay: 15,
+  //   time: 2000,
+  // });
 })(jQuery);
+
+
+// pop up section
+
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
+      if (!localStorage.getItem("subscribed")) {
+          const modal = new bootstrap.Modal(document.getElementById('subscribePopup'));
+          modal.show();
+      }
+  }, 60000);
+});
+
+// Handle form submission
+document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  if (!this.checkValidity()) {
+      e.stopPropagation();
+      this.classList.add('was-validated');
+      return;
+  }
+  
+  const email = this.querySelector('input[type="email"]').value;
+  
+  // Here you would typically send this to your backend
+  console.log("Subscribed email:", email);
+  
+  localStorage.setItem("subscribed", "true");
+  
+  // Show success message
+  alert("Thank you for subscribing! Your special repair offers have been sent to your email.");
+  
+  // Close modal
+  const modal = bootstrap.Modal.getInstance(document.getElementById('subscribePopup'));
+  modal.hide();
+});

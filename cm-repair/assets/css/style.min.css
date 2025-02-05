@@ -89,7 +89,7 @@ body {
   line-height: 1.6;
   font-size: 16px;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 body.loaded {
@@ -2254,6 +2254,14 @@ a.text-dark:hover, .text-dark a:hover {
   color: #35382f !important;
 }
 
+.item {
+  /* height: 100vh */
+}
+
+.pricing-item {
+  /* height: 100vh; */
+}
+
 .pricing-item h4 {
   padding: 25px 10px;
   background-color: gray;
@@ -3024,3 +3032,24 @@ a.scroll-to-top.show:hover {
   }
 }
 /* our recent products end */
+
+
+/* pop up start */
+.modal-dialog {
+  max-width: 800px;
+}
+
+@media (max-width: 767.98px) {
+  .modal-dialog {
+      margin: 0.5rem;
+  }
+
+  .pop-img img{
+      display: none;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+/* pop up end */

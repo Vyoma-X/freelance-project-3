@@ -19,9 +19,6 @@
      <link rel="stylesheet" href="../assets/css/specing.min.css">
     
     <style>
-        .bg-gradient-dark {
-            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
-        }
 
         .modal-dialog {
             max-width: 800px;
@@ -30,6 +27,10 @@
         @media (max-width: 767.98px) {
             .modal-dialog {
                 margin: 0.5rem;
+            }
+
+            .pop-img img{
+                display: none;
             }
         }
 
@@ -49,7 +50,7 @@
             
             <div class="row g-0">
                 <!-- Left Side - Image -->
-                <div class="col-md-6 position-relative">
+                <div class="col-md-6 position-relative pop-img">
                     <img src="/api/placeholder/400/600" alt="Device Repair" class="img-fluid h-100 object-fit-cover">
                     <div class="position-absolute bottom-0 start-0 w-100 bg-gradient-dark p-3 d-md-none">
                         <h5 class="text-white mb-0">Expert Device Repair Services</h5>
