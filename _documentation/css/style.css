@@ -91,3 +91,28 @@ pre{
 img{
 	box-shadow: 2px 1px 13px #999;
 }
+
+
+/* our product */
+
+.swivel-effect {
+	transform: perspective(800px) rotateY(0deg);
+	transition: transform 0.5s;
+}
+
+.swivel-effect:hover {
+	transform: perspective(800px) rotateY(10deg);
+}
+
+.btn {
+	background-color: orange;
+	color: white;
+}
+
+.btn:hover {
+	background-color: darkorange;
+}
+
+.card-body {
+	text-align: left;
+}

@@ -13,6 +13,7 @@
     <!-- all css files -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/plugins/OwlCarousel2-develop/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/jquery-nice-select-master/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -179,38 +180,342 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mb-5 mb-lg-0">
-                    <div class="nav flex-column nav-pills">
-                        <a class="nav-link rounded-0 text-white text-left active" href="services.html">PC Laptop Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-mac.html">Mac Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-desktop.html">PC Desktop Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-iphone.html">iPhone Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-ipad.html">iPad Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-smartphone.html">Smartphone Repair</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-data.html">Data Recovery</a>
-                        <a class="nav-link rounded-0 text-white text-left" href="services-softwere.html">Software Update</a>
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link rounded-0 text-white text-center active" data-toggle="pill" href="#one" role="tab" aria-selected="true">PC Laptop Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#two" role="tab" aria-selected="false">Mac Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#three" role="tab" aria-selected="false">PC Desktop Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#four" role="tab" aria-selected="false">iPhone Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#five" role="tab" aria-selected="false">iPad Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#six" role="tab" aria-selected="false">Smartphone Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#seven" role="tab" aria-selected="false">Data Recovery</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#eight" role="tab" aria-selected="false">Software Update</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#nine" role="tab" aria-selected="false">Console Repair</a>
+                        <a class="nav-link rounded-0 text-white text-center" data-toggle="pill" href="#ten" role="tab" aria-selected="false">Buy & Sell</a>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="service-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="h1 text-dark mb-25">PC Laptop Repair</h2>
+                    <div class="tab-content service-item" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="one" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 mb-25 text-dark text-center">Professional PC & Laptop Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7 order-1 order-md-0">
+                                        <p>Our expert technicians provide reliable and efficient PC and laptop repairs to keep your devices running smoothly. Whether it’s a hardware issue, software problem, or something in between, we’ve got you covered with fast, quality repairs.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Screen replacements.</li>
+                                            <li>Battery replacements.</li>
+                                            <li> Virus and malware removal.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>Software installation and updates.</li>
+                                            <li>Hard drive replacements.</li>
+                                            <li>RAM upgrades.</li>
+                                            <li>Operating system repairs.</li>
+                                            <li>Keyboard and trackpad repairs.</li>
+                                            <li>Custom PC builds and upgrades.</li>
+                                        </ul>
+                                        
+                                        <div class="d-flex">
+                                            <a href="pcLaptop-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-8 order-0 order-md-1 my-1 mb-4 my-md-0">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-7 order-1 order-md-0">
-                                <p>His followed carriage proposal entrance directly had elegance. Greater for cottage gay parties natural. Remaining he furniture on he discourse suspected perpetual. Power dried her taken.</p>
-                                <ul class="check-list mt-30">
-                                    <li>On-site computer repair and upgrades.</li>
-                                    <li>Virus and firewall protection.</li>
-                                    <li>Home and office network installation.</li>
-                                    <li>Wireless network installation and troubleshooting.</li>
-                                    <li>Spyware/adware removal.</li>
-                                    <li>Data transfer and data backup.</li>
-                                </ul>
-                                <a href="#!" class="btn btn-primary mt-35">Reed More</a>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="two" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Expert Mac Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We specialize in Mac repairs, delivering fast and reliable solutions for your Apple devices. Whether you're dealing with a broken screen, battery issues, or system malfunctions, our skilled technicians are here to restore your Mac to its full potential.
+                                        </p>
+                                        <ul class="check-list mt-30">
+                                            <li>Screen replacements.</li>
+                                            <li>Battery replacements.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>MacOS troubleshooting and updates.</li>
+                                            <li>Hard drive upgrades.</li>
+                                            <li>RAM upgrades.</li>
+                                            <li>Logic board repairs.</li>
+                                            <li>Keyboard and trackpad repairs.</li>
+                                            <li>Charging port repairs.</li>
+                                            <li>Wi-Fi and connectivity fixes.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="mac-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-5 col-sm-8 order-0 order-md-1 my-1 mb-4 my-md-0">
-                                <img class="img-fluid" src="assets/images/home-4/laptop-repair.jpg" alt="">
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="three" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Professional PC Desktop Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Our expert technicians provide comprehensive PC desktop repair services, ensuring your system is up and running quickly. From hardware upgrades to system optimizations, we handle all aspects of desktop repairs with precision and efficiency.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Power supply replacement.</li>
+                                            <li>Motherboard repairs.</li>
+                                            <li>Graphics card upgrades.</li>
+                                            <li>Hard drive and SSD replacements.</li>
+                                            <li>RAM upgrades.</li>
+                                            <li>Custom PC builds.</li>
+                                            <li>Operating system installations and repairs.</li>
+                                            <li>Cooling system repairs.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>Peripheral and accessory repairs.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="pcDesktop-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="four" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Expert iPhone Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We offer professional iPhone repairs, providing fast and reliable solutions for all your Apple device needs. Whether it's a screen crack, battery issue, or software malfunction, our experienced technicians restore your iPhone to peak performance.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Screen replacements.</li>
+                                            <li>Battery replacements.</li>
+                                            <li>Camera repairs.</li>
+                                            <li>Charging port repairs.</li>
+                                            <li>Button and touch ID repairs.</li>
+                                            <li>Water damage repair.</li>
+                                            <li>Software troubleshooting.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>Speaker and microphone repairs.</li>
+                                            <li>iOS updates and installations.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="i-phone-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="five" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Professional iPad Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We provide expert iPad repairs to ensure your device performs like new. Whether it's a screen crack, battery issue, or charging problem, our skilled technicians deliver fast, reliable repairs to get your iPad back to optimal condition.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Screen replacements.</li>
+                                            <li>Battery replacements.</li>
+                                            <li>Charging port repairs.</li>
+                                            <li>Camera repairs.</li>
+                                            <li>Home button and touch ID repairs.</li>
+                                            <li>Software troubleshooting.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>Water damage repair.</li>
+                                            <li>Speaker and microphone repairs.</li>
+                                            <li>iOS updates and installations.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="i-pad-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="six" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Comprehensive Smartphone Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We specialize in smartphone repairs, offering fast and reliable solutions for all major brands. From screen damage to battery issues, our expert technicians provide efficient and affordable repairs to get your device back in perfect working condition.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>OScreen replacements.</li>
+                                            <li>Battery replacements.</li>
+                                            <li>Charging port repairs.</li>
+                                            <li>Camera repairs.</li>
+                                            <li>Button and touch ID repairs.</li>
+                                            <li>Speaker and microphone repairs.</li>
+                                            <li>Water damage repairs.</li>
+                                            <li>Software troubleshooting.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>Operating system updates.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="smartphone-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="seven" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Reliable Data Recovery & Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We offer professional data recovery and repair services, helping you recover lost or corrupted data from a wide range of devices. Whether it's a failed hard drive, damaged storage, or software issue, our experienced technicians use advanced tools to restore your valuable files securely.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Hard drive recovery.</li>
+                                            <li>SSD recovery.</li>
+                                            <li>Data transfer and backup.</li>
+                                            <li>Corrupted file repair.</li>
+                                            <li>External drive repair.</li>
+                                            <li>Phone and tablet data recovery.</li>
+                                            <li>Data recovery from water-damaged devices.</li>
+                                            <li>Deleted file recovery.</li>
+                                            <li>Operating system reinstallations.</li>
+                                            <li>Custom data repair solutions.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="data-recovery.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="eight" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Expert Software Update & Optimization Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Our software update services ensure your device is running the latest, most secure versions of your operating system and applications. Whether it's system optimizations or critical updates, we ensure your device performs at its best, free from bugs or security vulnerabilities.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Operating system updates.</li>
+                                            <li>Software installation and updates.</li>
+                                            <li>Security patches and fixes.</li>
+                                            <li>App updates and optimizations.</li>
+                                            <li>System performance enhancements.</li>
+                                            <li>Bug fixes and troubleshooting.</li>
+                                            <li>Operating system recovery.</li>
+                                            <li>Data backup and restoration.</li>
+                                            <li>Custom software solutions.</li>
+                                            <li>Malware and spyware protection.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="software-repair." class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="nine" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Professional Gaming Console Repair Services</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>We offer expert gaming console repairs, ensuring your system is ready for uninterrupted gaming. Whether it’s a hardware malfunction, power issue, or disk drive problem, our technicians provide quick, efficient solutions to get you back in the game.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Console power repairs.</li>
+                                            <li>HDMI and display issues.</li>
+                                            <li>Disk drive repairs.</li>
+                                            <li>Overheating solutions.</li>
+                                            <li>Motherboard and internal repairs.</li>
+                                            <li>Controller repairs and syncing issues.</li>
+                                            <li>Cooling system fixes.</li>
+                                            <li>Software troubleshooting.</li>
+                                            <li>Data recovery and backup.</li>
+                                            <li>System updates and reinstallation.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="console-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
+                        </div>
+                        <div class="tab-pane fade" id="ten" role="tabpanel">
+                            <div class="service-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2 class="h1 text-dark mb-25 text-center">Buy & Sell Phones, Laptops, Gaming Consoles, Tablets & More</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Looking to buy or sell devices? We offer competitive prices for phones, laptops, gaming consoles, and tablets, making it easy for you to get great deals. Whether you're upgrading your tech or selling old devices, we provide secure transactions and fair offers.</p>
+                                        <ul class="check-list mt-30">
+                                            <li>Sell your phone, laptop, or gaming console for top value.</li>
+                                            <li>Wide selection of refurbished devices for sale.</li>
+                                            <li>Trade-ins with instant offers.</li>
+                                            <li>Best prices for used phones and laptops.</li>
+                                            <li>Certified refurbished gaming consoles.</li>
+                                            <li>Tablet sales and trade-ins.</li>
+                                            <li>Secure and fast transactions.</li>
+                                            <li>Instant payments for devices.</li>
+                                            <li>Free device evaluations.</li>
+                                            <li>Buy premium quality used tech at affordable prices.</li>
+                                        </ul>
+                                        <div class="d-flex">
+                                            <a href="buy-sell-repair.html" class="btn btn-primary rounded-0 mt-35">Read More</a>
+                                            <a href="tel:123-456-7890" class="btn btn-primary rounded-0 mt-35 ml-20">Call Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="assets/images/service-tab-img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- service-item -->
                         </div>
                     </div>
                 </div>
@@ -369,6 +674,10 @@
                         <li><a href="#!"><span class="fab fa-facebook-f"></span></a></li>
                         <li><a href="#!"><span class="fab fa-twitter"></span></a></li>
                         <li><a href="#!"><span class="fab fa-linkedin-in"></span></a></li>
+                        <li><a href="#!"><span class="fa-brands fa-youtube"></span></a></li>
+                        <li><a href="#!"><span class="fa-brands fa-instagram"></span></a></li>
+                        <li><a href="#!"><span class="fa-brands fa-threads"></span></a></li>
+                        <li><a href="#!"><span class="fa-brands fa-whatsapp"></span></a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-md-6 mt-40">
@@ -424,6 +733,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p>Copyright © 2022. All Rights Reserved By CM-Repair</p>
+                    <p> Powered by WebConvert.</p>
                 </div>
             </div>
         </div>
