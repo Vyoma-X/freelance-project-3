@@ -380,8 +380,8 @@ small, .small {
 }
 
 .cm-page-header {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 @media (max-width: 767px) {
   .cm-page-header {
@@ -438,6 +438,14 @@ small, .small {
 .cards{
   height: 48vh;
 }
+
+@media (max-width : 430px){
+  .cards{
+    height: 55vh;
+  }
+}
+
+
 
 .number-input {
   border: 1px solid #dbdbdb;
@@ -925,8 +933,8 @@ a.text-dark:hover, .text-dark a:hover {
 }
 .home-4 .brand-carousel img {
   width: auto;
-  -webkit-filter: contrast(0.01);
-          filter: contrast(0.01);
+  /* -webkit-filter: contrast(0.01);
+          filter: contrast(0.01); */
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: auto;
@@ -1663,8 +1671,9 @@ a.text-dark:hover, .text-dark a:hover {
 .navbar-toggler {
   border: 0;
 }
+
 .navbar-toggler span {
-  color: #35382f;
+  color: white;
 }
 
 .dropdown-toggle::after {
@@ -1712,7 +1721,7 @@ a.text-dark:hover, .text-dark a:hover {
   padding: 10px 15px !important;
 }
 .cm-header .navbar-light .nav-link {
-  color: #35382f !important;
+  /* color: #35382f !important; */
 }
 .cm-header .navbar-light .nav-link:hover {
   opacity: 0.7;
@@ -1769,16 +1778,14 @@ a.text-dark:hover, .text-dark a:hover {
   }
 }
 .cm-header .header {
-  padding: 12px 0;
+  /* padding: 12px 0; */
   -webkit-box-shadow: 0 0 30px -15px #cecece;
           box-shadow: 0 0 30px -15px #cecece;
 }
 @media (max-width: 991px) {
-  .cm-header .header {
-    padding: 8px 0;
-  }
   .cm-header .header .navbar-brand img {
-    width: 160px;
+    /* width: 100px; */
+    height: 100px;
   }
   .cm-header .header .dropdown-item {
     text-align: center;
@@ -1786,8 +1793,12 @@ a.text-dark:hover, .text-dark a:hover {
 }
 @media (max-width: 767px) {
   .cm-header .header {
-    padding: 4px 0;
+    padding: 0px 0;
   }
+}
+
+.cm-header .header{
+  padding: 0px;
 }
 .cm-header .header .block {
   margin-left: 15px;
@@ -1845,7 +1856,8 @@ a.text-dark:hover, .text-dark a:hover {
   padding: 7px !important;
 }
 .cm-header.cm-header-2 .header .navbar-toggler span {
-  font-size: 15px;
+  font-size: 25px;
+ 
 }
 .cm-header.cm-header-2 .header .block {
   margin-left: 0;
@@ -2968,8 +2980,8 @@ a.scroll-to-top.show:hover {
 }
 
 .testimonial-client-image {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
