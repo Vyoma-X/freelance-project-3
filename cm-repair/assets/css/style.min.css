@@ -2,7 +2,11 @@
 /*==============================================================================
 [Table of CSS components]
 ==============================================================================*/
+@import url('https://fonts.cdnfonts.com/css/not-just-groovy');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@700&display=swap");
+.font1 {
+  font-family: 'Not Just Groovy', sans-serif;
+}
 h1, .h1 {
   font-size: 40px;
 }
@@ -47,7 +51,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: 'Not Just Groovy', sans-serif;
 }
 
 h1, .h1, h2, .h2, h3 {
@@ -85,7 +90,8 @@ ul, li {
 
 body {
   color: #7d7d7d;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Not Just Groovy', sans-serif;
   line-height: 1.6;
   font-size: 16px;
   overflow-x: hidden;
@@ -120,11 +126,11 @@ body.loaded {
 
 /*=== UTILITIES CLASSES ===*/
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Not Just Groovy', sans-serif;
 }
 
 .font-secondery {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Not Just Groovy', sans-serif;
 }
 
 .font-w-400 {
@@ -238,6 +244,7 @@ small, .small {
   }
 }
 .btn:active, .btn:focus {
+  background-color: #f5610c;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -428,6 +435,7 @@ small, .small {
 }
 .check-list li::before {
   font-family: "Font Awesome 5 Free";
+  /* font-family: 'Not Just Groovy', sans-serif; */
   font-weight: 900;
   content: "";
   margin-right: 10px;
@@ -755,6 +763,7 @@ a.text-dark:hover, .text-dark a:hover {
 .home-4 .product-item .card-body {
   text-align: center;
   padding: 17px 20px 30px;
+  height : 25vh;
 }
 .home-4 .product-item .card-body h5 {
   font-weight: 700;
@@ -1141,7 +1150,7 @@ a.text-dark:hover, .text-dark a:hover {
 .single-features-wrap h4 {
   color: #000C22;
   margin-bottom: 0;
-  font-family: Poppins;
+  font-family: 'Not Just Groovy', sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1159,7 +1168,7 @@ a.text-dark:hover, .text-dark a:hover {
   text-align: center;
 }
 .single-fact-wrap .wrap-details h2 {
-  font-family: Raleway;
+  font-family: 'Not Just Groovy', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -1225,7 +1234,7 @@ a.text-dark:hover, .text-dark a:hover {
   padding: 0 18px;
 }
 .single-service-wrap h4 {
-  font-family: Raleway;
+  font-family: 'Not Just Groovy', sans-serif;
   color: #000C22;
   font-size: 20px;
   font-weight: 700;
@@ -1387,7 +1396,7 @@ a.text-dark:hover, .text-dark a:hover {
   line-height: 50px;
   display: inline-block;
   margin-right: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Not Just Groovy', sans-serif;
   color: #000C22;
 }
 .accordion-inner-wrap .card .card-header button:after {
@@ -2793,6 +2802,7 @@ a.text-dark:hover, .text-dark a:hover {
 }
 .footer-links a::before {
   font-family: "Font Awesome 5 Free";
+  /* font-family: 'Not Just Groovy', sans-serif; */
   content: "";
   font-weight: 900;
   margin-right: 8px;
@@ -3033,9 +3043,13 @@ a.scroll-to-top.show:hover {
   transform: translateY(-5px);
 }
 
-.swiper-pagination {
+/* .swiper-pagination {
   color: #f5610c;
-  /* background-color: #f5610c; */
+
+} */
+.swiper-pagination-bullet-active{
+  /* color: #f5610c; */
+  background-color: #f5610c;
 }
 
 .swiper {
