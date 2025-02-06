@@ -1797,6 +1797,11 @@ a.text-dark:hover, .text-dark a:hover {
   }
 }
 
+.navbar-brand img {
+  width: 25vw;
+  height: 15vh;
+}
+
 .cm-header .header{
   padding: 0px;
 }
@@ -2066,11 +2071,11 @@ a.text-dark:hover, .text-dark a:hover {
 }
 
 .cm-banner-03 {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 @media (max-width: 767px) {
   .cm-banner-03 {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2360,6 +2365,11 @@ a.text-dark:hover, .text-dark a:hover {
   width: 12px;
   height: 12px;
 }
+
+.why-choose-us-carousel .block{
+  height : 48vh;
+}
+
 .why-choose-us .bg-shape-image .owl-dots button.owl-dot.active {
   width: 20px;
 }
@@ -3023,6 +3033,10 @@ a.scroll-to-top.show:hover {
   transform: translateY(-5px);
 }
 
+.swiper-pagination {
+  color: #f5610c;
+  /* background-color: #f5610c; */
+}
 
 .swiper {
   width: 100%;
